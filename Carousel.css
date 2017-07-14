@@ -78,3 +78,8 @@ body {
 }
 .next { right: 5em; }
 .prev { left: 5em; }
+
+
+.resize{
+  width:100%;
+}

@@ -1,3 +1,5 @@
+$("document").ready(function(){
+
 var carousel = $(".carousel"),
     currdeg  = 0;
 
@@ -18,3 +20,4 @@ function rotate(e){
     "transform": "rotateY("+currdeg+"deg)"
   });
 }
+});
