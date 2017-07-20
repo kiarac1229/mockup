@@ -1,5 +1,4 @@
 body {
-  background: #333;
   padding: 70px 0;
   font: 15px/20px Arial, sans-serif;
 }
@@ -35,27 +34,27 @@ body {
 }
 
 .a {
-  transform: rotateY(0deg) translateZ(250px);
+  transform: rotateY(0deg) translateZ(450px);
   background: #ed1c24;
 }
 .b {
-  transform: rotateY(60deg) translateZ(250px);
+  transform: rotateY(60deg) translateZ(450px);
   background: #0072bc;
 }
 .c {
-  transform: rotateY(120deg) translateZ(250px);
+  transform: rotateY(120deg) translateZ(450px);
   background: #39b54a;
 }
 .d {
-  transform: rotateY(180deg) translateZ(250px);
+  transform: rotateY(180deg) translateZ(450px);
   background: #f26522;
 }
 .e {
-  transform: rotateY(240deg) translateZ(250px);
+  transform: rotateY(240deg) translateZ(450px);
   background: #630460;
 } 
 .f {
-  transform: rotateY(300deg) translateZ(250px);
+  transform: rotateY(300deg) translateZ(450px);
   background: #8c6239;
 }
 
@@ -73,13 +72,26 @@ body {
 }
 .next:hover, .prev:hover { color: #000; }
 .next:active, .prev:active {
-  top: 104px;
   box-shadow: 0 1px 0 #999;
 }
-.next { right: 5em; }
-.prev { left: 5em; }
+.next { 
+  right: 1em;
+  top:70%;
+  
+
+}
+.prev { 
+  left: 1em;
+  top:70%;
+}
 
 
 .resize{
   width:100%;
+}
+
+
+li {
+    float: none;
+    display: inline-block;
 }

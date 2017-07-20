@@ -1,29 +1,34 @@
+$(function (){
 
-// Set the date we're counting down to
-var countDownDate = new Date("Sept 15, 2017 12:00:00").getTime();
+function countdown() {
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+var now = new Date();
+var eventDate = new Date(2017, 8, 15);
+var currentTime = now.getTime();
+var evenTime = eventDate.getTime();
 
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EVENT DAY!";
-    }
-}, 1000);
+var remTime = evenTime - currentTime;
+
+var sec = Math.floor(remTime / 1000);
+var min = Math.floor(sec / 60);
+var hur = Math.floor(min / 60);
+var day = Math.floor(hur / 24);
+
+ hur %= 24;
+ min %= 60;
+ sec %= 60;
+
+hur = (hur < 10) ? "0" + hur : hur;
+min = (min < 10) ? "0" + min : min;
+sec = (sec < 10) ? "0" + sec : sec;
+
+$('.seconds').text(sec);
+$('.minutes').text(min);
+$('.hours').text(hur);
+$('.days').text(day);
+
+setTimeout(countdown, 1000);
+}
+
+countdown();
+});

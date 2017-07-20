@@ -1,0 +1,51 @@
+
+    .container2 {
+    width: 800px;
+    height: 500px;
+    margin:  auto;
+    background: #72898E;
+    border-radius: 3px;
+    border: 1px solid #72898E;
+    text-align: center
+}
+
+    .container2 h2 {
+    color: #fff;
+    font-size: 30px;
+    font-family: tahoma;
+    padding: 50px 0 20px;
+    font-weight: normal
+}
+
+    .container2 .content {
+    width: 100%;
+}
+
+    .container2 .content > div {
+    display: inline-block;
+    margin: 100px 10px 0;
+    width: 120px;
+    height: 150px;
+    background: maroon;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 150px;
+    font-family: tahoma;
+    font-size: 55px;
+}
+
+    .container2 .title {
+    height: 50px;
+    background: #72898E;
+    position: relative
+}
+
+    .container2 .title span {
+    display: inline-block;
+    width: 140px;
+    font-size: 20px;
+    font-family: tahoma;
+    color: #fff;
+    line-height: 50px;
+
+}
