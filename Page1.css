@@ -6,7 +6,7 @@ h1 {
     font-weight: bold;
     text-align: center;
     font-size: 50px;
-    color: #fff;
+    color: maroon;
     margin-top: 120px;
 }
 #main-page {
@@ -15,7 +15,6 @@ h1 {
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
     margin: auto;
-    /*background-color: #27ae60;*/
     display: none;
 }
 #next-page {

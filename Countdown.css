@@ -3,9 +3,10 @@
     width: 800px;
     height: 500px;
     margin:  auto;
-    background: #72898E;
+    /*background: #72898E;*/
+    /*opacity: 0.5;*/
     border-radius: 3px;
-    border: 1px solid #72898E;
+    /*border: 1px solid #72898E;*/
     text-align: center
 }
 
@@ -23,10 +24,10 @@
 
     .container2 .content > div {
     display: inline-block;
-    margin: 100px 10px 0;
+    margin: 10px 10px 0;
     width: 120px;
     height: 150px;
-    background: maroon;
+    background: #72898E;
     border-radius: 5px;
     color: #fff;
     line-height: 150px;
@@ -37,7 +38,9 @@
     .container2 .title {
     height: 50px;
     background: #72898E;
-    position: relative
+    opacity:0.9;
+    position: relative;
+    border-radius: 10px;
 }
 
     .container2 .title span {

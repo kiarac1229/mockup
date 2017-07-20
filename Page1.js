@@ -14,7 +14,7 @@ $(document).ready(function() {
       });
     };
     
-    $("#main-page").css("background-color", "#e74c3c");
+    // $("#main-page").css("background-color", "maroon");
 $("#main-page").css("height", "100vh");
 $("#main-page").css("width", "100%");
 $("#main-page").fadeIn();

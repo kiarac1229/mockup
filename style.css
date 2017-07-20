@@ -17,9 +17,14 @@
 button.btn.btn-info {
     background-color: steelblue;
 }
+ 
+.next {
+    background:;
+}
 
-
-
+.prev {
+    
+}
 li {
     float: none;
     display: inline-block;
